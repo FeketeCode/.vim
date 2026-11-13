@@ -21,5 +21,7 @@ nnoremap <F2> :Black<CR>
 let g:black_linelength = 79
 let g:black_skip_string_normalization = 1
 
+nnoremap <F3> :!clear;python3 -m mypy %<CR>
+
 " Run the currently open Python file.
 nnoremap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
