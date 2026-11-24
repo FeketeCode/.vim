@@ -9,6 +9,9 @@ set colorcolumn=80,73
 
 filetype indent on
 
+" Requires vim-gtk3 (apt install vim-gtk3)
+:set clipboard+=unnamedplus
+
 packadd lsp
 call LspAddServer([#{name: 'pylsp',
                  \   filetype: 'python',
